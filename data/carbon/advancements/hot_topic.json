@@ -1,0 +1,43 @@
+{
+	"parent": "minecraft:story/upgrade_tools",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:furnace"
+		},
+		"title":
+		{
+			"translate": "Hot Topic"
+		},
+		"description":
+		{
+			"translate": "§7Construct a furnace out of eight cobblestone blocks."
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"hottopic":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions":
+			{
+				"items":
+				[{
+					"items":
+					[
+						"minecraft:furnace"
+					]
+				}]
+			}
+		}
+	},
+	"requirements":
+	[
+		["hottopic"]
+	]
+}

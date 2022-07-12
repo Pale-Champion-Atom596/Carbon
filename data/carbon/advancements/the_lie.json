@@ -1,0 +1,43 @@
+{
+	"parent": "minecraft:husbandry/plant_seed",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:cake"
+		},
+		"title":
+		{
+			"translate": "The Lie"
+		},
+		"description":
+		{
+			"translate": "§7Wheat, sugar, milk, and eggs!"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"thelie":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions":
+			{
+				"items":
+				[{
+					"items":
+					[
+						"minecraft:cake"
+					]
+				}]
+			}
+		}
+	},
+	"requirements":
+	[
+		["thelie"]
+	]
+}

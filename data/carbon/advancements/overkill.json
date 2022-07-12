@@ -1,0 +1,50 @@
+{
+	"parent": "minecraft:story/enchant_item",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:netherite_sword"
+		},
+		"title":
+		{
+			"translate": "Overkill"
+		},
+		"description":
+		{
+			"translate": "§7Deal nine hearts of damage in a single hit."
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"overkill":
+		{
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions":
+			{
+				"damage":
+				{
+					"taken":
+					{
+						"min": 17
+					},
+					"type":
+					{
+						"bypassess_invulnerability": false,
+						"is_fire": false,
+						"is_magic": false,
+						"is_projectile": false
+					}
+				}
+			}
+		}
+	},
+	"requirements":
+	[
+		["overkill"]
+	]
+}

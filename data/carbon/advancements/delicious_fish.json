@@ -1,0 +1,44 @@
+{
+	"parent": "minecraft:husbandry/fishy_business",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:cooked_salmon"
+		},
+		"title":
+		{
+			"translate": "Delicious Fish"
+		},
+		"description":
+		{
+			"translate": "§7Catch and cook fish."
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"fish":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions":
+			{
+				"items":
+				[{
+					"items":
+					[
+						"minecraft:cooked_cod",
+						"minecraft:cooked_salmon"
+					]
+				}]
+			}
+		}
+	},
+	"requirements":
+	[
+		["fish"]
+	]
+}

@@ -1,0 +1,26 @@
+{
+  "parent": "morevillagers:first_village",
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancements.adventure.trade.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.trade.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "villagertrade": {
+      "trigger": "minecraft:villager_trade"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}
